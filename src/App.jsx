@@ -99,7 +99,7 @@ function App() {
             Otimize seu fluxo de trabalho e desenvolva sem barreiras!
           </h1>
           <p className="text-base md:text-lg leading-relaxed mb-8 text-shadow-strong">
-            Encontre o seu 'flow'. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
+            Encontre o seu Flow. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
           </p>
           <a href="#planos" className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105">
             Entre no Flow
