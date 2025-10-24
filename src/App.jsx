@@ -39,12 +39,12 @@ function App() {
   return (
     <div className="text-white min-h-screen gradient-bg">
       { }
-      <div id="top-bar" className="sticky top-0 left-0 w-full flex justify-between items-center p-3 z-50 transition-all duration-300 bg-black/30 backdrop-blur-md">
+      <div id="top-bar" className="sticky top-0 left-0 w-full flex justify-between items-center p-3 md:p-6 z-50 transition-all duration-300 bg-black/30 backdrop-blur-md">
         <a href="#" className="relative z-[2] transition-all duration-300 hover:scale-110">
           <img
             src={logoUrl}
             alt="Logo DevFlow"
-            className="w-[150px] h-auto rounded-xl"
+            className="w-[110px] h-auto rounded-xl"
           />
         </a>
 
@@ -66,7 +66,7 @@ function App() {
 
         <button
           onClick={toggleMenu}
-          className="md:hidden fixed top-8 right-8 z-[1000] text-white bg-transparent border-none cursor-pointer p-0"
+          className="md:hidden fixed top-4 right-4 md:top-6 md:right-6 z-[1000] text-white bg-transparent border-none cursor-pointer p-0"
         >
           { }
           {menuOpen ? (
