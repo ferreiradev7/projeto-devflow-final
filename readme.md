@@ -6,9 +6,9 @@ Desenvolvido por: Humberto pimenta ferreira Filho
 
 Uma landing page moderna e responsiva para o DevFlow, construída com React, Vite e Tailwind CSS. O objetivo é apresentar a ferramenta DevFlow, seus benefícios e planos.
 
-**Link para o Deploy (GitHub Pages):** https://github.com/ferreiradev7/projeto-devflow-final
+**Link para o Deploy :** https://ferreiradev7.github.io/projeto-devflow-final/
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
 * **Design Responsivo:** Adaptado para funcionar bem em desktops, tablets e dispositivos móveis.
 * **Navegação Fixa (Sticky):** A barra de navegação permanece no topo durante a rolagem, com efeito de "vidro fosco" (`backdrop-blur`).
@@ -23,14 +23,14 @@ Uma landing page moderna e responsiva para o DevFlow, construída com React, Vit
     * Contato 
 * **Estilização Moderna:** Utiliza Tailwind CSS para um design rápido e consistente.
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 * **[React](https://reactjs.org/):** Biblioteca JavaScript para construção de interfaces de usuário.
 * **[Vite](https://vitejs.dev/):** Ferramenta de build rápida para desenvolvimento frontend moderno.
 * **[Tailwind CSS](https://tailwindcss.com/):** Framework CSS utility-first para estilização rápida.
 * **[React Icons](https://react-icons.github.io/react-icons/):** Biblioteca para incluir ícones populares (como os do menu mobile).
 
-## 🔧 Como Executar Localmente
+##  Como Executar Localmente
 
 Siga estas instruções para configurar e rodar o projeto na sua máquina local:
 
