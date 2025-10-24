@@ -108,19 +108,23 @@ function App() {
       {
 
       }
-      <header className="relative h-[40dvh] pt-[70px] md:pt-[95px]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] text-center w-[90%] md:w-4/5 max-w-[800px]">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-shadow-strong">
-            Otimize seu fluxo de trabalho e desenvolva sem barreiras!
-          </h1>
-          <p className="text-base md:text-lg leading-relaxed mb-8 text-shadow-strong">
-            Encontre o seu Flow. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
-          </p>
-          <a href="#planos" className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105">
-            Entre no Flow
-          </a>
-        </div>
-      </header>
+      <header className="relative h-[40dvh] pt-[120px] md:pt-[95px] lg:pt-[110px]">
+  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] text-center w-[90%] md:w-4/5 max-w-[800px]">
+    <h1 className="text-3xl md:text-5xl font-bold mb-4 text-shadow-strong">
+      Otimize seu fluxo de trabalho e desenvolva sem barreiras!
+    </h1>
+    <p className="text-base md:text-lg leading-relaxed mb-8 text-shadow-strong">
+      Encontre o seu Flow. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
+    </p>
+    <a
+      href="#planos"
+      className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105"
+    >
+      Entre no Flow
+    </a>
+  </div>
+</header>
+
 
       <main>
 
@@ -164,7 +168,7 @@ function App() {
             </p>
 
             <div className="flex flex-col md:flex-row justify-center gap-8 mt-12 items-stretch">
-              <div className="plano-card bg-[#1A1B2E] p-10 rounded-lg text-center w-full md:w-[300px] border-2 border-primary  transition-all duration-[600ms] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(106,68,255,0.3)] flex flex-col">
+              <div className="plano-card bg-[#1A1B2E] p-10 rounded-xl text-center w-full md:w-[300px] border-2 border-primary  transition-all duration-[600ms] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(106,68,255,0.3)] flex flex-col">
                 <h3 className="text-2xl font-bold mb-3">Básico</h3>
                 <p className="text-4xl font-bold text-primary mb-6">Grátis</p>
                 <ul className="list-none p-0 mb-8 space-y-3 flex-grow">
@@ -173,12 +177,12 @@ function App() {
                   <li className="text-base text-gray-400">Integração com GitHub (básica)</li>
                   <li className="text-base text-gray-400">2 membros por equipe</li>
                 </ul>
-                <a href="#" className="inline-block bg-transparent text-white border-2 border-white px-7 py-3 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-white hover:text-[#1A1A2E] mt-auto">
+                <a href="#" className="inline-block bg-transparent text-white border-2 border-white px-7 py-3 text-lg font-bold rounded-xl transition-all duration-300 hover:bg-white hover:text-[#1A1A2E] mt-auto">
                   Comece Grátis
                 </a>
               </div>
 
-              <div className="plano-card bg-[#1A1B2E] p-10 rounded-lg text-center w-full md:w-[300px] border-2 border-primary  transition-all duration-[600ms] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(106,68,255,0.4)] md:scale-105 flex flex-col">
+              <div className="plano-card bg-[#1A1B2E] p-10 rounded-xl text-center w-full md:w-[300px] border-2 border-primary  transition-all duration-[600ms] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(106,68,255,0.4)] md:scale-105 flex flex-col">
                 <h3 className="text-2xl font-bold mb-3">Pro</h3>
                 <p className="text-4xl font-bold text-primary mb-6">R$29 /mês</p>
                 <ul className="list-none p-0 mb-8 space-y-3 flex-grow">
@@ -187,12 +191,12 @@ function App() {
                   <li className="text-base text-gray-400">Relatórios de produtividade</li>
                   <li className="text-base text-gray-400">Automações de fluxo de trabalho</li>
                 </ul>
-                <a href="#" className="inline-block bg-[#6A44FF] text-white px-7 py-3 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105 mt-auto">
+                <a href="#" className="inline-block bg-[#6A44FF] text-white px-7 py-3 text-lg font-bold rounded-xl transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105 mt-auto">
                   Escolher Pro
                 </a>
               </div>
 
-              <div className="plano-card bg-[#1A1B2E] p-10 rounded-lg text-center w-full md:w-[300px] border-2 border-primary  transition-all duration-[600ms] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(106,68,255,0.3)] flex flex-col">
+              <div className="plano-card bg-[#1A1B2E] p-10 rounded-xl text-center w-full md:w-[300px] border-2 border-primary  transition-all duration-[600ms] hover:-translate-y-3 hover:shadow-[0_20px_40px_rgba(106,68,255,0.3)] flex flex-col">
                 <h3 className="text-2xl font-bold mb-3">Empresarial</h3>
                 <p className="text-4xl font-bold text-primary mb-6">Sob Consulta</p>
                 <ul className="list-none p-0 mb-8 space-y-3 flex-grow">
@@ -201,7 +205,7 @@ function App() {
                   <li className="text-base text-gray-400">Suporte prioritário 24/7</li>
                   <li className="text-base text-gray-400">Onboarding dedicado</li>
                 </ul>
-                <a href="#contato" className="inline-block bg-transparent text-white border-2 border-white px-7 py-3 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-white hover:text-[#1A1A2E] mt-auto">
+                <a href="#contato" className="inline-block bg-transparent text-white border-2 border-white px-7 py-3 text-lg font-bold rounded-xl transition-all duration-300 hover:bg-white hover:text-[#1A1A2E] mt-auto">
                   Fale Conosco
                 </a>
               </div>
