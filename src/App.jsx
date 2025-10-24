@@ -43,9 +43,10 @@ function App() {
       { }
       <div
         id="top-bar"
-        className="sticky top-0 left-0 w-full flex justify-between items-center py-3 md:py-5 px-4 md:px-8 lg:px-16 xl:px-24 z-50 
+        className="sticky top-0 left-0 w-full flex justify-between items-center py-2. md:py-3.5 px-4 md:px-8 lg:px-16 xl:px-24 z-50 
              transition-all duration-300 bg-black/30 backdrop-blur-md border-t border-black/30"
       >
+
 
         <a
           href="#"
