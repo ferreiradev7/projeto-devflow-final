@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-out forwards;
 }
@@ -17,13 +22,13 @@
 }
 
 .gradient-bg {
-  
+
   background: linear-gradient(-45deg, #6A44FF, #1A1A2E, #16213E, #5838d4);
-  
-  
+
+
   background-size: 400% 400%;
 
-  
+
   animation: moveGradient 8s ease infinite;
 }
 
