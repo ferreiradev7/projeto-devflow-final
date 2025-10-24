@@ -84,7 +84,7 @@ function App() {
       </div>
 
 
-      <header className="relative z-10 h-[40dvh] pt-[140px] sm:pt-[150px] md:pt-[110px] lg:pt-[120px] scroll-mt-[100px]">
+      <header className="relative z-10 h-[40dvh] pt-[70px] md:pt-[95px]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] text-center w-[90%] md:w-4/5 max-w-[800px]">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-shadow-strong">
             Otimize seu fluxo de trabalho e desenvolva sem barreiras!
