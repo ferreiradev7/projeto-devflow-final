@@ -1,7 +1,5 @@
 # DevFlow - Landing Page
 
-![DevFlow Logo](./public/logo.png) 
-
 Desenvolvido por: Humberto pimenta ferreira Filho
 
 Esse projeto é uma landing page moderna e responsiva criada para o DevFlow. Desenvolvi usando React, Vite e Tailwind CSS, com o objetivo de apresentar de forma clara os benefícios e planos da ferramenta.

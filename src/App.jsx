@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import logoUrl from './assets/logo.png'
 import rosto1Url from './assets/rosto1.png'
 import rosto2Url from './assets/rosto2.png'
@@ -109,21 +109,21 @@ function App() {
 
       }
       <header className="relative h-[40dvh] pt-[120px] md:pt-[95px] lg:pt-[110px]">
-  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] text-center w-[90%] md:w-4/5 max-w-[800px]">
-    <h1 className="text-3xl md:text-5xl font-bold mb-4 text-shadow-strong">
-      Otimize seu fluxo de trabalho e desenvolva sem barreiras!
-    </h1>
-    <p className="text-base md:text-lg leading-relaxed mb-8 text-shadow-strong">
-      Encontre o seu Flow. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
-    </p>
-    <a
-      href="#planos"
-      className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105"
-    >
-      Entre no Flow
-    </a>
-  </div>
-</header>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] text-center w-[90%] md:w-4/5 max-w-[800px]">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-shadow-strong">
+            Otimize seu fluxo de trabalho e desenvolva sem barreiras!
+          </h1>
+          <p className="text-base md:text-lg leading-relaxed mb-8 text-shadow-strong">
+            Encontre o seu Flow. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
+          </p>
+          <a
+            href="#planos"
+            className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105"
+          >
+            Entre no Flow
+          </a>
+        </div>
+      </header>
 
 
       <main>
@@ -284,14 +284,14 @@ function App() {
             </div>
 
             <div className="flex justify-center gap-8 md:gap-16 py-12 flex-wrap">
-              <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
-                GitHub
+              <a href="#" aria-label="GitHub Profile" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
+                <FaGithub className="w-8 h-8" />
               </a>
-              <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
-                LinkedIn
+              <a href="#" aria-label="LinkedIn Profile" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
+                <FaLinkedin className="w-8 h-8" />
               </a>
-              <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
-                Twitter
+              <a href="#" aria-label="Twitter Profile" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
+                <FaTwitter className="w-8 h-8" />
               </a>
             </div>
           </div>
