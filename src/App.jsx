@@ -41,13 +41,16 @@ function App() {
     <div className="text-white min-h-screen gradient-bg">
       { }
       { }
-      <div id="top-bar" className="sticky top-0 left-0 w-full flex justify-between items-center py-2 md:py-3 px-4 md:px-3 lg:px-16 xl:px-24 z-50 transition-all duration-300 bg-black/30 backdrop-blur-md border-t border-black/30">
+      <div
+        id="top-bar"
+        className="sticky top-0 left-0 w-full flex justify-between items-center py-3 md:py-5 px-4 md:px-8 lg:px-16 xl:px-24 z-50 
+             transition-all duration-300 bg-black/30 backdrop-blur-md border-t border-black/30"
+      >
 
-        { }
-
-
-        { }
-        <a href="#" className="relative z-[2] transition-all duration-300 hover:scale-110">
+        <a
+          href="#"
+          className="relative z-[2] transition-all duration-300 hover:scale-110"
+        >
           <img
             src={logoUrl}
             alt="Logo DevFlow"
@@ -55,60 +58,32 @@ function App() {
           />
         </a>
 
-        { }
         <div>
-          { }
+
           <nav className="main-nav hidden md:flex gap-8 relative z-[2]">
-            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
-              Sobre
-            </a>
-            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
-              Planos
-            </a>
-            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
-              Feedbacks
-            </a>
-            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
-              Contato
-            </a>
+            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">Sobre</a>
+            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">Planos</a>
+            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">Feedbacks</a>
+            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">Contato</a>
           </nav>
 
-          { }
-          <button
-            onClick={toggleMenu}
-            className="md:hidden relative z-[1000] text-white bg-transparent border-none cursor-pointer p-0"
-          >
-            {menuOpen ? (
-              <FaTimes className="w-7 h-7" />
-            ) : (
-              <FaBars className="w-7 h-7" />
-            )}
+
+          <button onClick={toggleMenu} className="md:hidden relative z-[1000] text-white bg-transparent border-none cursor-pointer p-0">
+            {menuOpen ? <FaTimes className="w-7 h-7" /> : <FaBars className="w-7 h-7" />}
           </button>
 
-          { }
-          <nav className={`fixed top-0 ${menuOpen ? 'right-0' : '-right-full'} w-[70%] max-w-[300px] h-screen bg-[#1A1B2E] pt-24 px-5 pb-5 flex flex-col gap-4 z-[998] shadow-[-4px_0_20px_rgba(0,0,0,0.5)] transition-all duration-[400ms] md:hidden`}>
-            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
-              Sobre
-            </a>
-            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
-              Planos
-            </a>
-            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
-              Feedbacks
-            </a>
-            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
-              Contato
-            </a>
+
+          <nav className={`fixed top-0 ${menuOpen ? "right-0" : "-right-full"} w-[70%] max-w-[300px] h-screen bg-[#1A1B2E] pt-24 px-5 pb-5 flex flex-col gap-4 z-[998] shadow-[-4px_0_20px_rgba(0,0,0,0.5)] transition-all duration-[400ms] md:hidden`}>
+            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">Sobre</a>
+            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">Planos</a>
+            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">Feedbacks</a>
+            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">Contato</a>
           </nav>
         </div>
+      </div>
 
-      </div> { }
 
-
-      {
-
-      }
-      <header className="relative h-[40dvh] pt-[120px] md:pt-[95px] lg:pt-[110px]">
+      <header className="relative h-[40dvh] pt-[140px] sm:pt-[150px] md:pt-[110px] lg:pt-[120px] scroll-mt-[100px]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[2] text-center w-[90%] md:w-4/5 max-w-[800px]">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 text-shadow-strong">
             Otimize seu fluxo de trabalho e desenvolva sem barreiras!
@@ -116,19 +91,17 @@ function App() {
           <p className="text-base md:text-lg leading-relaxed mb-8 text-shadow-strong">
             Encontre o seu Flow. Nós cuidamos da organização para que você possa se concentrar em resolver problemas e escrever código excepcional.
           </p>
-          <a
-            href="#planos"
-            className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105"
-          >
+          <a href="#planos" className="inline-block bg-[#6A44FF] text-white px-7 py-3.5 text-lg font-bold rounded-lg transition-all duration-300 hover:bg-[#5838d4] hover:shadow-[0_10px_20px_rgba(106,68,255,0.4)] hover:scale-105">
             Entre no Flow
           </a>
         </div>
       </header>
 
 
+
       <main>
 
-        <section id="sobre" className="py-20">
+        <section id="sobre" className="py-20 scroll-mt-[100px]">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <h2 className="text-center text-4xl font-bold mb-4">Feito de devs, para devs.</h2>
             <p className="text-center text-lg text-gray-400 max-w-[600px] mx-auto mt-12 mb-12">
@@ -160,7 +133,7 @@ function App() {
           </div>
         </section>
 
-        <section id="planos" className="py-20">
+        <section id="planos" className="py-20 scroll-mt-[100px]">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <h2 className="text-center text-4xl font-bold mb-4">Escolha o plano perfeito para você.</h2>
             <p className="text-center text-lg text-gray-400 max-w-[600px] mx-auto">
@@ -213,8 +186,8 @@ function App() {
           </div>
         </section>
 
-        { }
-        <section id="feedbacks" className="py-20">
+
+        <section id="feedbacks" className="py-20 scroll-mt-[100px]">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <h2 className="text-center text-4xl font-bold mb-4">Feedbacks dos nossos usuários</h2>
             <p className="text-center text-lg text-gray-400 max-w-[600px] mx-auto mt-12 mb-12">
@@ -223,7 +196,7 @@ function App() {
 
             <div className="flex flex-col md:flex-row gap-8 justify-around items-stretch">
 
-              { }
+
               <div className="feedback-card bg-[#0D1117] p-8 rounded-lg transition-all duration-[600ms] hover:-translate-y-2 flex flex-col items-center text-center">
                 <img
                   src={rosto1Url}
@@ -237,7 +210,7 @@ function App() {
                 <p className="text-sm text-[#6A44FF]">Desenvolvedora Frontend</p>
               </div>
 
-              { }
+
               <div className="feedback-card bg-[#0D1117] p-8 rounded-lg transition-all duration-[600ms] hover:-translate-y-2 flex flex-col items-center text-center">
                 <img
                   src={rosto2Url}
@@ -251,7 +224,7 @@ function App() {
                 <p className="text-sm text-[#6A44FF]">Desenvolvedor Backend</p>
               </div>
 
-              { }
+
               <div className="feedback-card bg-[#0D1117] p-8 rounded-lg transition-all duration-[600ms] hover:-translate-y-2 flex flex-col items-center text-center">
                 <img
                   src={rosto3Url}
@@ -268,9 +241,9 @@ function App() {
             </div>
           </div>
         </section>
-        { }
 
-        <section id="contato" className="py-48 md:py-40 text-center">
+
+        <section id="contato" className="py-48 md:py-40 text-center scroll-mt-[100px]">
           <div className="max-w-7xl mx-auto px-4 md:px-6">
             <h2 className="text-4xl font-bold mb-4">Fale Conosco.</h2>
             <p className="text-lg font-semibold text-gray-300 max-w-[700px] mx-auto mb-10">
