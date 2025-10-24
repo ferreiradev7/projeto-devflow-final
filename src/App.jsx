@@ -36,11 +36,12 @@ function App() {
     setMenuOpen(false)
   }
 
+
   return (
     <div className="text-white min-h-screen gradient-bg">
       { }
       { }
-      <div id="top-bar" className="sticky top-0 left-0 w-full flex justify-between items-center py-3 md:py-4 px-4 md:px-6 lg:px-16 xl:px-24 z-50 transition-all duration-300 bg-black/30 backdrop-blur-md">
+      <div id="top-bar" className="sticky top-0 left-0 w-full flex justify-between items-center py-2 md:py-3 px-4 md:px-3 lg:px-16 xl:px-24 z-50 transition-all duration-300 bg-black/30 backdrop-blur-md border-t border-black/30">
 
         { }
 
@@ -50,7 +51,7 @@ function App() {
           <img
             src={logoUrl}
             alt="Logo DevFlow"
-            className="w-[110px] md:w-[150px] h-auto rounded-xl"
+            className="w-[100px] md:w-[150px] h-auto rounded-xl"
           />
         </a>
 
@@ -58,16 +59,16 @@ function App() {
         <div>
           { }
           <nav className="main-nav hidden md:flex gap-8 relative z-[2]">
-            <a href="#sobre" className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
+            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
               Sobre
             </a>
-            <a href="#planos" className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
+            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
               Planos
             </a>
-            <a href="#feedbacks" className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
+            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
               Feedbacks
             </a>
-            <a href="#contato" className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
+            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-xl px-4 py-2 transition-all duration-300 hover:bg-white hover:text-[#6A44FF] hover:-translate-y-1 hover:shadow-[0_8px_16px_rgba(106,68,255,0.3)]">
               Contato
             </a>
           </nav>
@@ -86,16 +87,16 @@ function App() {
 
           { }
           <nav className={`fixed top-0 ${menuOpen ? 'right-0' : '-right-full'} w-[70%] max-w-[300px] h-screen bg-[#1A1B2E] pt-24 px-5 pb-5 flex flex-col gap-4 z-[998] shadow-[-4px_0_20px_rgba(0,0,0,0.5)] transition-all duration-[400ms] md:hidden`}>
-            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-lg px-5 py-4 text-center transition-all duration-300 hover:-translate-x-1">
+            <a href="#sobre" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
               Sobre
             </a>
-            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-lg px-5 py-4 text-center transition-all duration-300 hover:-translate-x-1">
+            <a href="#planos" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
               Planos
             </a>
-            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-lg px-5 py-4 text-center transition-all duration-300 hover:-translate-x-1">
+            <a href="#feedbacks" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
               Feedbacks
             </a>
-            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white border-2 border-white rounded-lg px-5 py-4 text-center transition-all duration-300 hover:-translate-x-1">
+            <a href="#contato" onClick={closeMenu} className="text-base font-semibold text-white rounded-md px-4 py-2 transition-all duration-300 hover:bg-white/10 hover:text-[#6A44FF]">
               Contato
             </a>
           </nav>
@@ -265,28 +266,30 @@ function App() {
         </section>
         { }
 
-        <section id="contato" className="py-20 px-5 md:px-16 text-center">
-          <h2 className="text-4xl font-bold mb-4">Fale Conosco.</h2>
-          <p className="text-lg font-semibold text-gray-300 max-w-[700px] mx-auto mb-10">
-            Tem alguma dúvida, sugestão ou quer apenas trocar uma ideia? Adoraríamos ouvir você. Nos encontre em nossas redes ou nos envie um e-mail.
-          </p>
+        <section id="contato" className="py-48 md:py-40 text-center">
+          <div className="max-w-7xl mx-auto px-4 md:px-6">
+            <h2 className="text-4xl font-bold mb-4">Fale Conosco.</h2>
+            <p className="text-lg font-semibold text-gray-300 max-w-[700px] mx-auto mb-10">
+              Tem alguma dúvida, sugestão ou quer apenas trocar uma ideia? Adoraríamos ouvir você. Nos encontre em nossas redes ou nos envie um e-mail.
+            </p>
 
-          <div className="my-10">
-            <a href="mailto:contato@devflow.com" className="inline-block text-xl md:text-2xl p-4 md:p-5 text-white border-2 border-white rounded-lg transition-all duration-300 hover:bg-white hover:text-[#1A1A2E] break-all">
-              contato@devflow.com
-            </a>
-          </div>
+            <div className="my-10">
+              <a href="mailto:contato@devflow.com" className="inline-block text-xl md:text-2xl p-4 md:p-5 text-white border-2 border-white rounded-lg transition-all duration-300 hover:bg-white hover:text-[#1A1A2E] break-all">
+                contato@devflow.com
+              </a>
+            </div>
 
-          <div className="flex justify-center gap-8 md:gap-16 py-12 flex-wrap">
-            <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
-              GitHub
-            </a>
-            <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
-              LinkedIn
-            </a>
-            <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
-              Twitter
-            </a>
+            <div className="flex justify-center gap-8 md:gap-16 py-12 flex-wrap">
+              <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
+                GitHub
+              </a>
+              <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
+                LinkedIn
+              </a>
+              <a href="#" className="text-xl font-semibold text-gray-400 transition-colors duration-300 hover:text-white">
+                Twitter
+              </a>
+            </div>
           </div>
         </section>
       </main>
