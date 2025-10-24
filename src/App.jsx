@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import logoUrl from './assets/logo.png'
+import rosto1Url from './assets/rosto1.png'
+import rosto2Url from './assets/rosto2.png'
+import rosto3Url from './assets/rosto3.png'
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -38,7 +42,7 @@ function App() {
       <div id="top-bar" className="sticky top-0 left-0 w-full flex justify-between items-center p-3 z-50 transition-all duration-300 bg-black/30 backdrop-blur-md">
         <a href="#" className="relative z-[2] transition-all duration-300 hover:scale-110">
           <img
-            src="/logo.png"
+            src={logoUrl}
             alt="Logo DevFlow"
             className="w-[150px] h-auto rounded-xl"
           />
@@ -202,7 +206,7 @@ function App() {
             { }
             <div className="feedback-card bg-[#0D1117] p-8 rounded-lg transition-all duration-[600ms] hover:-translate-y-2 flex flex-col items-center text-center">
               <img
-                src="/rosto2.png"
+                src={rosto1Url}
                 alt="Feedback de usuário 1"
                 className="w-24 h-24 rounded-full border-2 border-[#6A44FF] mb-6"
               />
@@ -216,7 +220,7 @@ function App() {
             { }
             <div className="feedback-card bg-[#0D1117] p-8 rounded-lg transition-all duration-[600ms] hover:-translate-y-2 flex flex-col items-center text-center">
               <img
-                src="/rosto1.png"
+                src={rosto2Url}
                 alt="Feedback de usuário 2"
                 className="w-24 h-24 rounded-full border-2 border-[#6A44FF] mb-6"
               />
@@ -230,7 +234,7 @@ function App() {
             { }
             <div className="feedback-card bg-[#0D1117] p-8 rounded-lg transition-all duration-[600ms] hover:-translate-y-2 flex flex-col items-center text-center">
               <img
-                src="/rosto3.png"
+                src={rosto3Url}
                 alt="Feedback de usuário 3"
                 className="w-24 h-24 rounded-full border-2 border-[#6A44FF] mb-6"
               />
